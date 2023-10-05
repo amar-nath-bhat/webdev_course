@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms3</title>
+</head>
+<body>
+
+    <h2>Job Application</h2>
+
+    <form>
+
+        <label for="name">Name:</label></br>
+        <input type="text" id="name">
+    </br></br>
+
+        <label for="email">Email Address:</label></br>
+        <input type="email" id="email">
+    </br></br>
+
+        <label for="phone">Phone No.:</label></br>
+        <input type="tel" id="phone">
+    </br></br>
+
+        <label for="resume">Resume:</label></br>
+        <input type="file" id="resume">
+    </br></br>
+
+        <label for="exp">Experience (years):</label></br>
+        <input type="number" id="exp" min="0" max="50">
+    </br></br>
+
+        <fieldset>
+            <legend>Skills:</legend>
+            <input type="checkbox" id="skills"> 
+            <label for="skills">HTML</label> <br>
+            <input type="checkbox" id="skills"> 
+            <label for="skills">CSS</label><br>
+            <input type="checkbox" id="skills">   
+            <label for="skills">JS</label><br> 
+        </fieldset><br>
+
+        <label for="edu">Highest Education</label>
+    <br><br>
+
+        <select id="edu">
+            <option value="edu" id="edu">High School</option>
+            <option value="edu" id="edu">Bachelors</option>
+            <option value="edu" id="edu">Masters</option>
+        </select>
+    <br><br>
+
+        <label>Availability:</label><br>
+        <input type="radio" id="full" name="ava">
+        <label for="full">Full Time</label><br>
+        <input type="radio" id="female" name="ava">
+        <label for="part">Part Time</label><br>
+    
+    <textarea name="comment" id="comment" cols="30" rows="10">Additional Comments</textarea>
+    <br><br>
+
+    <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
