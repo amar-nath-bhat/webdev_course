@@ -1,0 +1,23 @@
+/* External CSS */
+#p1{
+    color: aqua;
+}
+#p2{
+    color: yellowgreen;
+}
+#p3{
+    color: violet;
+}
+#list1{
+    color: teal;
+}
+#s1{
+    color: tomato;
+}
+ul{
+    text-align: center;
+}
+.para{
+    font-family: cursive;
+}
+
