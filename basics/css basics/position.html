@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+</head>
+<style>
+    /* By default all elements are static positioned. Their positions cannot be changed. */
+    .container{
+        background-color: blue;
+        height: 1000px;
+        border: 10px solid black;
+    }
+
+    .container2{
+        border: 10px solid black;
+        height: 1000px;
+        background-color: brown;
+    }
+    /* In Relative Positioning the gap for an element is maintained. And position is set relative to the window*/
+    .image1{
+        position: relative;
+        top: 100px;
+        left: 100px;
+    }
+    /* In absolute Positioning the gap is not preserved and positioning is done relative to nearest positioned ancestor, in this case for <section> it is <div> */
+    .image2{
+        position: absolute;
+        top: 500px;
+        left: 100px;
+    }
+    /* In fixed positioning the element is fied in its position with respect to the window. */
+    .image3{
+        position: fixed;
+        left: 1500px;
+    }
+    /* In sticky positioning, the element is fixed with respect to its parent element/container. */
+    .image4{
+        position: sticky;
+        top: 300px;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <img src="../mediafiles/Lamp.png" alt="Lamp" class="image1" width="500px" height="500px">
+        <img src="https://imgs.search.brave.com/G1EiT52WnD2SOoyWfvC95rq_alecXml_c3RwH9fUTCI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFLa05LYzhwaUwu/anBn" alt="Lamp" class="image2" width="500px" height="500px">
+        <img src="https://imgs.search.brave.com/BDlZYjed0Z8PWK5EPsvo2UZDt83_1S5fN9sOkCXKg6k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNy8x/MC8zMC8yMy8zNC9s/YW1wLTI5MDM4MzBf/NjQwLmpwZw" alt="Lamp" class="image3" width="500px" height="500px">
+        <img src="https://imgs.search.brave.com/2N90LeYyzjRXLxtoeseFNyUkey9ovLQdKT2fien0Hi0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MTM1MDYwMDM5MDEt/MWU2YTIyOWUyZDE1/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TW54/OGJHRnRjSHhsYm53/d2ZId3dmSHg4TUE9/PSZ3PTEwMDAmcT04/MA" alt="Lamp" class="image4" width="500px" height="500px">
+
+        <!-- <section class="section1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempore saepe totam fugiat facere magnam rerum error optio quidem consequuntur. Sunt consequuntur itaque neque velit praesentium esse mollitia. Sequi, nemo.</p>
+        </section>
+
+        <section class="section2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempore saepe totam fugiat facere magnam rerum error optio quidem consequuntur. Sunt consequuntur itaque neque velit praesentium esse mollitia. Sequi, nemo.</p>
+        </section> -->
+
+    </div>
+    <div class="container2">
+
+    </div>
+</body>
+
+
+</html>
