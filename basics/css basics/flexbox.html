@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+</head>
+<style>
+    .container1{
+        border: 1px solid black;
+        margin: 0px;
+        background-color: aquamarine;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        /* default flex-direction is row */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* below function wraps the text with its actual size, till space is available */
+        /* flex-wrap: wrap; */
+        /* no wrap squeeses the element to fit into the space */
+        justify-content: center;
+    }
+
+    .container2{
+        border: 1px solid black;
+        margin: 0px;
+        background-color: magenta;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        /* default flex-direction is row */
+        flex-direction: column;
+        /* flex-direction: row-reverse; */
+        flex-direction: column-reverse;
+        /* below function wraps the text with its actual size, till space is available */
+        flex-wrap: wrap;
+        /* no wrap squeeses the element to fit into the space */
+        align-items: center;
+    }
+
+    .box{
+        height: 250px;
+        width: 250px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #item1{
+        border: 2px solid red;
+        background-color: bisque;
+        justify-content: end;
+    }
+
+    #item2{
+        border: 2px solid red;
+        background-color: greenyellow;
+    }
+
+    #item3{
+        border: 2px solid red;
+        background-color: goldenrod;
+    }
+
+    #item4{
+        border: 2px solid red;
+        background-color: lightblue;
+    }
+
+
+</style>
+<body>
+    <div class="container1">
+        <div class="box" id="item1"></div>
+        <div class="box" id="item2"></div>
+        <div class="box" id="item3"></div>
+        <div class="box" id="item4"></div>
+    </div>
+
+    <div class="container2">
+        <div class="box" id="item1"></div>
+        <div class="box" id="item2"></div>
+        <div class="box" id="item3"></div>
+        <div class="box" id="item4"></div>
+    </div>
+</body>
+</html>

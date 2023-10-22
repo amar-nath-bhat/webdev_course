@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+
+<style>
+    .container{
+        display: flex;
+        background-color: aqua;
+        border: 2px solid black;
+    }
+
+    .text{
+        background-color: bisque;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+    }
+    #text1{
+        background-color: bisque;
+    }
+
+    .box2{
+        background-color: bisque;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    @media (max-width: 640px){
+        .container{
+            flex-direction: column;
+        }
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="text" id="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, repellendus? Quaerat, dolores laboriosam? Nisi maxime quos mollitia quidem suscipit? Id!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae adipisci saepe id commodi nulla eaque nobis laborum reprehenderit repellendus.</div>
+            <div class="text" id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum est, necessitatibus obcaecati eveniet placeat vero ab omnis reiciendis earum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt doloremque odio provident dignissimos dolorum quas maxime voluptas facere voluptates deleniti.</div>
+        </div>
+
+        <div class="box2">
+            <img src="../mediafiles/Lamp.png" alt="lamp" width="200px" height="258px">
+        </div>
+    </div>
+</body>
+</html>

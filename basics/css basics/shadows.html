@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        /* Custom variable defined in root can be used in any element */
+        :root{
+            --primary-color: aqua;
+            --primary-width: 350px
+        }
+        .container{
+            background-color: var(--primary-color);
+            height: 500px; 
+            /* width: 500px; */
+            border: 2px solid black;
+            margin: 10px;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /* Custom variable */
+            --primary-color: brown;
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            /* /* height: 350px;  */
+            width: var(--primary-width); 
+            box-shadow: 10px 10px 10px 10px var(--primary-color);
+            /* box-shadow: 50px 35px --primary-color; x-pffset, y-offset, color */
+            /* box-shadow: 10px 10px 10px --primary-color; x, y, blur, color */
+            /* box-shadow: 10px 10px 10px 30px --primary-color; x,y,blur, spread, color */
+            /* box-shadow: inset 10px 10px --primary-color; inset- shadow inwards */
+            /* box-shadow: 10px 10px --primary-color, 20px 20px green; //multiple shadows */
+        }
+
+        img{
+            background-color: azure;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 5px;
+            height: 100px;
+            width: 120px;
+        }
+
+        h2{
+            background-color: yellow;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            /* spread radius not present in text shadow */
+            text-shadow: 2px 2px 2px blue;
+        }
+
+        p{
+            background-color: brown;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            /* nultiple text shadows */
+            text-shadow: 2px 2px 2px blue, 4px 4px 4px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="../mediafiles/Lamp.png" alt="lamp">
+            <h2>Lamp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corporis vero laborum quaerat! Eaque, ullam.</p>
+        </div>
+
+    </div>
+</body>
+</html>
