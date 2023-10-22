@@ -1,5 +1,7 @@
-basics/mediafiles/arrow.png
-basics/mediafiles/audio1.mp3
-basics/mediafiles/vid1.mp4
-basics/.vscode/settings.json
+basics/mediafiles
+basics/.vscode/
 basics/arrow.png
+/node_modules
+package-lock.json
+package.json
+tailwind.config.js
