@@ -2,51 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
 </head>
-<body>
-    <div>
 
-            <h1><u>Resume</u></h1>
+<body class="bg-blue-200 flex flex-col flex-wrap">
 
-        <section>
-            <h3>Personal Details:</h3>
-            <ul>
-                <li><p><b>Name:</b> Amarnath B Bhat</p></li>
-                <li><p><b>Date of Birth:</b> 20th November, 2004 </p></li>
-                <li><p><b>E-Mail ID: </b><a href="mailto:bhatamar8@gmail.com"> bhatamar8@gmail.com</a> </p></li>
-                <li><p><b>Git-Hub: </b><a href="https://github.com/amar-nath-bhat">github.com/amar-nath-bhat</a></p></li>
-            </ul>
+    <nav class="bg-blue-400 flex justify-between flex-wrap">
+
+        <div class="px-10 py-4 text-white font-bold text-3xl flex">Resume</div> 
+
+        <ul class="px-10 pt-5 text-white flex flex-wrap space-x-10 text-xl font-semibold">
+            <li class="cursor-pointer">About Me</li>
+            <li class="cursor-pointer">Skills</li>
+            <li class="cursor-pointer">Projects</li>
+            <li class="cursor-pointer">Contact</li>
+        </ul>
+
+    </nav>
+
+    <div class="m-3 px-10 py-3">
+
+        <section class="flex flex-col pb-5 space-y-2">
+            <div class="flex items-center space-x-4">
+                <img src="profile.jpg" alt="Profile Picture" class="w-12 h-12 rounded-full">
+                <h3 class="font-bold text-3xl">About Me</h3>
+            </div>
+            <p class="flex-cols">
+            
+                <p class="pt-3 pb-3 font-medium text-xl">
+                    Hello, I'm Amarnath B Bhat, a dedicated student, web developer, and aspiring engineer based in Udupi, Karnataka, India. My coding journey began in the very first year of my Bachelor's program, and since then, I've been on an exciting quest for knowledge and innovation.
+                </p>
+
+                <p class="pt-3 pb-3 font-medium text-xl">
+                    As a passionate web developer, I've honed my skills in HTML5, CSS and Tailwind CSS, and I've had the opportunity to work on a range of exciting projects that showcase my expertise. These experiences have fueled my passion for creating responsive, user-friendly websites and web applications.
+                </p>
+
+                <p class="pt-3 pb-3 font-medium text-xl">
+                    I believe in the power of continuous learning and enjoy staying up-to-date with the latest trends in web development. My curiosity drives me to seek out new challenges and opportunities for growth.
+                </p>
+
+                <p class="pt-3 pb-3 font-medium text-xl">
+                    I'm excited to connect, collaborate, and share my skills and projects with like-minded individuals and organizations. Whether it's building user-friendly websites, optimizing user experiences, or tackling complex coding challenges, I'm always eager to contribute to innovative projects.
+                </p>
+
+            </p>
+            
+            <p class="flex-col">
+
+                <h3 class="pt-3 pb-3 font-bold text-2xl">Personal Details</h3>
+
+                <ul class="flex flex-col text-xl space-y-3">
+                    <li> <span class="font-bold">Name:</span>
+                        Amarnath B Bhat</li>
+
+                    <li> <span class="font-bold">Date of Birth:</span>
+                        20th November, 2004</li>
+
+                    <li> <span class="font-bold">Residence:</span>
+                        Udupi, Karnataka, India</li>
+    
+
+                    
+                </ul>
+
+            </p>
+
+            <p class="flex-col">
+
+                <h3 class="pt-3 pb-3 font-bold text-2xl">Education Details</h3>
+
+                <ul class=" flex flex-col text-xl space-y-3">
+                    <li> <span class="font-bold">School:</span>
+                        Silas International School</li>
+
+                    <li> <span class="font-bold">University:</span>
+                        Manipal Academy of Higher Education</li>
+
+                    <li> <span class="font-bold">College</span>
+                        Manipal Institute of Technology
+                    </li>
+
+                    <li> <span class="font-bold">Program and Course:</span>
+                        Bachelor's of Technology in Computer and Communications Engineering
+                    </li>
+                </ul>
+            </p>
         </section>
 
-        <section>
-            <h3>Education Details:</h3>
-            <ul>
-                <li><p><b>School: </b>Silas International School, Udupi</p></li>
-                <li><p><b>College: </b>Manipal Institue of Technology, Manipal</p></li>
-                <li><p><b>Course: </b>B.Tech. Computer and Communications Engineering</p></li>
-            </ul>
-        </section>
 
-        <section>
-            <h3>Skills:</h3>
-            <ul>
-                <li>
-                    <p>
-                        Programming Languages Known:
-                        <ol>
-                            <li>Java</li>
-                            <li>C Language</li>
-                            <li>HTML</li>
-                            <li>Dart</li>
-                        </ol>
-                    </p>
+        <section class="flex-col pb-5 space-y-2">
+            <h3 class="font-bold text-3xl pb-3">Skills</h3>
+            <ul class=" flex flex-col text-xl space-y-3">
+                <li><span class="font-bold">Programming Languages: </span>
+                    Fluent in Java, C, C++ and Python
                 </li>
-                <li><p>Graphic Design</p></li>
+
+                <li><span class="font-bold">Web Development: </span>
+                    HTML5 and CSS (Tailwind)
+                </li>
+
+                <li><span class="font-bold">Data Analysis: </span>
+                    Python (Pandas, NumPy)
+                </li>
+
+                <li><span class="font-bold">Problem Solving: </span>
+                    Data Structures and Algorithms
+                </li>
+
+                <li><span class="font-bold">Operating Systems: </span>
+                    Linux and Windows
+                </li>
+
+                <li><span class="font-bold">Version Control: </span>
+                    Git
+                </li>
             </ul>
         </section>
 
+        <section class="flex-col pb-5 space-y-2">
+            <h3 class="font-bold text-3xl">Projects</h3>
+            <ul class=" flex flex-col text-xl space-y-3">
+                <li><span class="font-bold">Python: </span>
+                    <a href="../../learnpython/PyQt5 Tutorials/WebBrowser.py">WebBrowser Project</a>
+                </li>
+
+                <li><span class="font-bold">Tailwind: </span>
+                    <a href="project1.html">Resume Project</a>
+                </li>
+
+                <li><span class="font-bold">Tailwind: </span>
+                    <a href="project2.html">Catalog Project</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="flex-col pb-5 space-y-2">
+            <h3 class="font-bold text-3xl">Contact</h3>
+            <ul class=" flex flex-col text-xl space-y-3">
+                <li> <span class="font-bold">Email ID:</span>
+                    <a href="mailto:bhatamar8@gmail.com" class="hover:bg-white"> bhatamar8@gmail.com</a></li>
+
+                <li> <span class="font-bold">GitHub:</span>
+                    <a href="https://github.com/amar-nath-bhat " class="hover:bg-white">github.com/amar-nath-bhat</a></li>
+            </ul>
+        </section>
     </div>
     
 
