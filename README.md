@@ -1,2 +1,2 @@
-# html_course
-Learning HTML
+# webdev_course
+Learning Web Development
