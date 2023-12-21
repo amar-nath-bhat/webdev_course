@@ -2,10 +2,5 @@ basics/mediafiles
 basics/.vscode/
 basics/arrow.png
 /node_modules
-# package-lock.json
-# package.json
-# tailwind.config.js
-# postcss.config.js
-# input.css
-# style.css
+basics/React JS/react-app
 .gitignore

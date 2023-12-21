@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <script>
+        function valName() {
+            var nameInput = document.getElementById('name').value;
+            if (nameInput.trim() === '') {
+                alert('Please enter your name.');
+                return false;
+            }
+            var regex = /^[a-zA-Z\s]+$/;
+            if (!regex.test(nameInput)) {
+                alert('Please enter a valid name with only letters and spaces.');
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
 <body>
 
-    <form>
+    <form onsubmit="valName();">
         <fieldset>
             <legend>First Form</legend>
             
             <label for="name">Enter Your Name: </label>
-            <input type="text" id="name">
+            <input type="text" id="name" onblur="valName();">
 
             </br>
             </br>
@@ -62,7 +77,7 @@
             </br>
             </br>
 
-            <input type="image" name="image1" id="image1" alt="Arrow" src="arrow.png" height="20px" width="40px">
+            <input type="image" name="image1" id="image1" alt="Smiley" src="https://t3.ftcdn.net/jpg/01/12/43/90/360_F_112439016_DkgjEftsYWLvlYtyl7gVJo1H9ik7wu1z.jpg" height="40px" width="40px">
 
             </br>
             </br>

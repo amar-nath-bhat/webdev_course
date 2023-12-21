@@ -1,0 +1,35 @@
+body{
+    background-color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 20px;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+label{
+    font-size: 20px;
+    font-weight: bolder;
+}
+input{
+    font-size: 15px;
+}
+button{
+    font-size: 20px;
+    background-color: coral;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.skills{
+    margin-right:700px
+}
+#img1{
+    float: inline-end;
+}
+#comment{
+    width: 500px;
+    background-color: skyblue;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

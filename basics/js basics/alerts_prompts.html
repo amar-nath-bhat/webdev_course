@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/JavaScript">
+    function myPrompt() {
+        
+        var name = prompt("Enter Name: ");
+        if(name!=""){
+            document.getElementById("test").innerHTML = "Hi "+name;
+        }else{
+            alert("Enter Name!");
+        }
+    }
+</script>
+<body>
+    <button onclick="myPrompt();">Click Karo</button>
+    <p id="test"></p>
+</body>
+</html>
