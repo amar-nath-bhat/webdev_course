@@ -2,5 +2,4 @@ basics/mediafiles
 basics/.vscode/
 basics/arrow.png
 /node_modules
-basics/React JS/react-app
 .gitignore
